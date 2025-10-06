@@ -1,6 +1,6 @@
 # 🍸 Random Cocktail Recipe App
 
-A simple web app built with **Node.js**, **Express**, **Axios**, **EJS**, and **CSS** that fetches and displays cocktail recipes from a public API.  
+A simple web app built with **Node.js**, **JavaScript**, **Express**, **Axios**, **EJS**, and **CSS** that fetches and displays cocktail recipes from a public API.  
 This project is designed to practice working with APIs and server-side rendering.
 
 ---
@@ -28,16 +28,16 @@ This project is designed to practice working with APIs and server-side rendering
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/random-cocktail-app.git
+git clone https://github.com/TamNganLy/A-Random-Cocktail.git
 
 # 2. Go to the project directory
-cd random-cocktail-app
+cd A-Random-Cocktail
 
 # 3. Install dependencies
 npm install
 
 # 4. Start the server
-npm start
+node index.js
 ```
 
 Then open your browser and go to **[http://localhost:3000](http://localhost:3000)**
