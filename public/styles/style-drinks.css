@@ -1,0 +1,17 @@
+.drinks-img {
+  display: block;
+}
+
+.drink-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.drinks-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "a-random-cocktail",
+  "version": "1.0.0",
+  "description": "A simple web app built with **Node.js**, **JavaScript**, **Express**, **Axios**, **EJS**, and **CSS** that fetches and displays cocktail recipes from a public API.   This project is designed to practice working with APIs and server-side rendering.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamNganLy/A-Random-Cocktail.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamNganLy/A-Random-Cocktail/issues"
+  },
+  "homepage": "https://github.com/TamNganLy/A-Random-Cocktail#readme",
+  "dependencies": {
+    "axios": "^1.12.2",
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

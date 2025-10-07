@@ -1,0 +1,15 @@
+<ul class="row" bis_skin_checked="1">
+  <% drinks.forEach((d) => { %>
+  <li class="col-lg-3 col-md-4 col-sm-6 drink-grid-container" bis_skin_checked="1">
+    <a class="drinks-container" href="/<%=d.idDrink%>">
+      <img
+        class="rounded-circle drinks-img"
+        src="<%=d.strDrinkThumb%>"
+        alt="drink"
+        width="200"
+      />
+      <%=d.strDrink%>
+    </a>
+  </li>
+  <% }) %>
+</ul>
