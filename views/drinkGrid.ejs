@@ -1,14 +1,26 @@
-<ul class="row" bis_skin_checked="1">
+<ul class="row">
   <% drinks.forEach((d) => { %>
-  <li class="col-lg-3 col-md-4 col-sm-6 drink-grid-container" bis_skin_checked="1">
-    <a class="drinks-container" href="/<%=d.idDrink%>">
+  <li class="col-lg-3 col-md-4 col-sm-6 drink-grid-container">
+    <a class="drinks-container" href="/<%= d.idDrink %>">
       <img
         class="rounded-circle drinks-img"
-        src="<%=d.strDrinkThumb%>"
+        src="<%= d.strDrinkThumb %>"
         alt="drink"
-        width="200"
       />
-      <%=d.strDrink%>
+
+      <svg class="drink-text-svg" viewBox="0 0 240 240">
+        <defs>
+          <path
+            id="circlePath<%= d.idDrink %>"
+            d="M120,120 m-110,0 a110,110 0 1,1 220,0 a110,110 0 1,1 -220,0"
+          />
+        </defs>
+        <text>
+          <textPath href="#circlePath<%= d.idDrink %>" startOffset="25%">
+            <%= d.strDrink.toUpperCase() %>
+          </textPath>
+        </text>
+      </svg>
     </a>
   </li>
   <% }) %>
