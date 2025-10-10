@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">Get a drink</a>
+  <div class="container-fluid container">
+    <a class="navbar-brand" href="/">
+      <img class="web-logo" src="/images/logo.png" alt="logo" width="30" />
+      Get a drink
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -29,9 +32,9 @@
               <%= nav.name %>
             </a>
             <ul class="dropdown-menu scrollable-dropdown" aria-labelledby="navbarDropdown">
-              <% nav.list.forEach(l => { %>
-                <li><a class="dropdown-item" href="/filter/<%= nav.name %>/<%= l %>">
-                    <%= l %>
+              <% nav.list.forEach((l, i) => { %>
+                <li><a class="dropdown-item" href="/filter/<%= nav.name %>/<%= i %>">
+                  <%= l %>
                 </a></li>
               <% }) %>
             </ul>

@@ -9,8 +9,15 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="/styles/style-drinks.css" />
+    <link rel="stylesheet" href="/styles/style-drink.css" />
+    <link rel="stylesheet" href="/styles/style-drink-grid.css" />
     <link rel="stylesheet" href="/styles/style-header.css" />
     <link rel="icon" href="/images/favicon.png" type="image/PNG" />
     <title>A Random Cocktail</title>
@@ -19,14 +26,9 @@
     <%- include("header")%>
 
     <main class="container">
-      <% if (locals.drink) {%>
-        <%- include("drink")%>
-      <% } else if (locals.drinks) {%>
-        <%- include("drinkGrid")%>
-      <% } else { %>
-        <div>
-          There is no recipe
-        </div>
+      <% if (locals.drink) {%> <%- include("drink")%> <% } else if
+      (locals.drinks) {%> <%- include("drinkGrid")%> <% } else { %>
+      <div>There is no recipe</div>
       <% } %>
     </main>
 
@@ -35,5 +37,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="/styles/style.js">
+    </script>
   </body>
 </html>

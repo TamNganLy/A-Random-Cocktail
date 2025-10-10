@@ -2,11 +2,46 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('/images/header-background-5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .my-nav {
-  background-color: blanchedalmond !important;
+  background-color: var(--first-color) !important;
   margin-bottom: 20px;
+}
+
+.navbar-brand {
+  color: var(--fourth-color);
+}
+
+.navbar-brand:hover {
+  color: var(--fourth-color);
+  text-shadow: 1px 1px 10px var(--third-color);
+}
+
+.nav-link {
+  font-size: var(--small-size);
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 10px var(--third-color);
+}
+
+.btn-outline-success {
+  color: var(--fifth-color);
+  border-color: var(--fifth-color);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--fifth-color);
+  border-color: var(--fifth-color);
+}
+
+.dropdown-menu {
+  margin-top: 0 !important;
 }
 
 .scrollable-dropdown {
@@ -15,11 +50,24 @@
 }
 
 .scrollable-dropdown::-webkit-scrollbar {
-  /* background-color: #812222; */
+  background-color: white;
   width: 6px;
 }
 
 .scrollable-dropdown::-webkit-scrollbar-thumb {
-  background-color: #ccc;
+  background-color: var(--fourth-color);
   border-radius: 3px;
+}
+
+.web-title{
+  font-family: var(--font);
+  font-size: var(--large-size);
+  font-weight: 900;
+  text-shadow: 1px 1px 10px var(--first-color);
+}
+
+.header-container p {
+  font-size: var(--medium-size);
+  font-weight: 500;
+  text-shadow: 1px 1px 10px var(--first-color);
 }

@@ -1,0 +1,82 @@
+.drink {
+  border-radius: 20px;
+  border: 1.75px solid var(--second-color);
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.column {
+  padding: 0;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 20px 20px;
+}
+
+.detail * {
+  text-align: center;
+}
+
+.detail > h2 {
+  font-family: var(--font);
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.detail > p {
+  font-family: var(--text-font);
+  font-style: italic;
+}
+
+.info-container {
+  display: flex;
+}
+
+.info-title {
+  flex: 0 0 auto;
+  width: 50px;
+  color: var(--second-color);
+}
+
+.info-text {
+  flex: auto;
+  font-family: var(--text-font);
+  font-style: italic;
+}
+
+.info-title h3 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  line-height: var(--info-title-size);
+  font-size: var(--info-title-size);
+}
+
+.ingredient ul {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ingredient li {
+  display: table-row;
+}
+
+.measure, .item {
+  display: table-cell;
+  vertical-align: top;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  font-family: var(--text-font);
+}
+
+.measure {
+  white-space: nowrap;
+}
+

@@ -48,16 +48,16 @@ app.get("/filter/:category/:value", async (req, res) => {
 
   switch (category) {
     case "Category":
-      url += "c=" + value;
+      url += "c=" + navList[0].list[value];
       break;
     case "ALcoholic":
-      url += "a=" + value;
+      url += "a=" + navList[1].list[value];
       break;
     case "Glass":
-      url += "g=" + value;
+      url += "g=" + navList[2].list[value];
       break;
     case "Ingredients":
-      url += "i=" + value;
+      url += "i=" + navList[3].list[value];
       break;
     default:
       throw new Error("Invalid category type");
@@ -73,7 +73,7 @@ app.get("/:drinkId", async (req, res) => {
   await getDrink(req, res, url); 
 });
 
-// Get a drink by name
+// Get drinks by name
 app.post("/search", async(req, res) => {
   const searchName = req.body.name;
   const url = API_URL + "search.php?s=" + searchName;
@@ -111,8 +111,8 @@ async function getDrink(req, res, url) {
       const measure = "strMeasure" + index;
       if (result[0][ingredient] != "" && result[0][ingredient] != null) {
         ingredients.push({
-          i: result[0][ingredient],
-          m: (result[0][measure] || "").trim(),
+          i: result[0][ingredient].toUpperCase(),
+          m: (result[0][measure] || "").trim().toUpperCase(),
         });
       }
     }
@@ -120,7 +120,7 @@ async function getDrink(req, res, url) {
     res.render("index.ejs", {
       drink: {
         thumb: result[0].strDrinkThumb,
-        name: result[0].strDrink,
+        name: result[0].strDrink.toUpperCase(),
         category: result[0].strCategory,
         Alcoholic: result[0].strAlcoholic,
         glass: result[0].strGlass,

@@ -1,7 +1,47 @@
-html, body {
-  width: 100%;
+:root {
+  --font: "Tinos", serif;
+  --text-font: 'Sabon', serif;
+
+  /* --first-color: blanchedalmond;
+  --second-color: rgb(207, 172, 119);
+  --third-color: #D5A6A0;
+  --fourth-color: #D5A6A0;
+  --fifth-color: #D5A6A0; */
+
+  --first-color: #F5DDC2;
+  --second-color: rgb(189, 155, 105);
+  --third-color: #FC7100;
+  --fourth-color: #F45F67;
+  --fifth-color: #5CA135;
+
+  --info-title-size: 1rem;
+  --large-size: 3rem;
+  --medium-size: 1.5rem;
+  --small-size: 1.2rem;
+}
+
+@font-face {
+  font-family: 'Sabon';
+  src: url('/fonts/Sabon.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Sabon';
+  src: url('/fonts/SabonItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+}
+
+* { 
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  width: 100%;
+  font-family: var(--text-font);
 }
 
 a {
@@ -10,19 +50,11 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-
-
-.drink {
-  display: flex;
-
-}
-
-.thumbnail {
-  flex: 1;
-}
-
-.info {
-  flex: 1;
+hr {
+  opacity: 1;
+  border-top: 1.5px solid var(--second-color);
 }
