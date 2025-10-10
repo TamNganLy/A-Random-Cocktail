@@ -35,6 +35,6 @@
 }
 
 .drinks-container:hover .drink-text-svg text {
-  fill: var(--fourth-color); /* or any color you like */
+  fill: var(--fourth-color);
   transition: fill 0.15s ease;
 }

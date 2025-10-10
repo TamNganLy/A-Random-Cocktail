@@ -2,12 +2,6 @@
   --font: "Tinos", serif;
   --text-font: 'Sabon', serif;
 
-  /* --first-color: blanchedalmond;
-  --second-color: rgb(207, 172, 119);
-  --third-color: #D5A6A0;
-  --fourth-color: #D5A6A0;
-  --fifth-color: #D5A6A0; */
-
   --first-color: #F5DDC2;
   --second-color: rgb(189, 155, 105);
   --third-color: #FC7100;
@@ -17,7 +11,7 @@
   --info-title-size: 1rem;
   --large-size: 3rem;
   --medium-size: 1.5rem;
-  --small-size: 1.2rem;
+  --small-size: 1rem;
 }
 
 @font-face {

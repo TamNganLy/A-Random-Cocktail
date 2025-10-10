@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const adjustHeight = () => {
     const infoHeight = info.offsetHeight;
-    img.style.height = infoHeight > 700 ? infoHeight + "px" : "700px";
+    img.style.height = infoHeight > 650 ? infoHeight + "px" : "700px";
   };
 
   adjustHeight();

@@ -3,7 +3,6 @@
 A simple web app built with **Node.js**, **JavaScript**, **Express**, **Axios**, **EJS**, and **CSS** that fetches and displays cocktail recipes from a public API.  
 This project is designed to practice working with APIs and server-side rendering.
 
----
 
 ## 🚀 Features
 
@@ -12,7 +11,6 @@ This project is designed to practice working with APIs and server-side rendering
 - Display **drink name**, **ingredients**, **instructions**, and **image**
 - Simple and clean interface styled with **CSS**
 
----
 
 ## 🛠️ Tech Stack
 
@@ -22,7 +20,6 @@ This project is designed to practice working with APIs and server-side rendering
 - **EJS** — for rendering dynamic pages  
 - **CSS** — for styling  
 
----
 
 ## 📦 Installation
 
@@ -59,6 +56,9 @@ Then open your browser and go to **[http://localhost:3000](http://localhost:3000
 
 ---
 
-## 💡 Example
+## 📸 Screenshot
+- **Main Page** 
+![Main Page Screenshot](public/images/main-page.jpg)
 
-![example screenshot](https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg)
+- **Filter Page**
+![Tablet Screenshot](public/images/filter-page.jpg)
