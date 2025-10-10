@@ -4,6 +4,11 @@ A simple web app built with **Node.js**, **JavaScript**, **Express**, **Axios**,
 This project is designed to practice working with APIs and server-side rendering.
 
 
+## 🌐 Live Demo
+
+Try the app online: [https://a-random-cocktail.onrender.com](https://a-random-cocktail.onrender.com)
+
+
 ## 🚀 Features
 
 - Fetch a **random cocktail recipe**

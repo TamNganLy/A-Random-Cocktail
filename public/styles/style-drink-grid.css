@@ -19,7 +19,7 @@
 .drink-text-svg {
   position: absolute;
   top: calc(var(--small-size)*(-1));
-  left: calc(var(--small-size)*(-1));
+  left: -1.2rem;
   width: 240px;
   height: 240px;
   pointer-events: none;
